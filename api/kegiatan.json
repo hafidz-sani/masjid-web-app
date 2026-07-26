@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "Kajian Rutin",
+    "pemateri": "Ustadz Ahmad",
+    "time": "2026-07-27T19:00:00",
+    "status": "akan-datang"
+  },
+  {
+    "id": "2",
+    "title": "Santunan Yatim",
+    "place": "Lantai 2",
+    "time": "2026-07-29T08:00:00",
+    "status": "akan-datang"
+  },
+  {
+    "id": "3",
+    "title": "Buka Bersama",
+    "time": "2026-07-30T17:30:00",
+    "status": "akan-datang"
+  }
+]

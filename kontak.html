@@ -1,119 +1,104 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kontak — Masjid Web App</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri&family=Inter:wght@400;500;510;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23040404'/><path d='M16 4L4 18h4c1.5-5 5.5-10 12-12v4C20 3 17 8 15 14h7c2 5 0 10-5 12v-6c5 1 8 6 7 10h4L16 4z' fill='white'/></svg>" type="image/svg+xml">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak — Masjid Web App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Amiri:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 6L6 20H8C9.1 14.93 14.07 10 20 8C25.93 10 30.9 14.93 32 20H34L20 6Z" stroke="#171717" stroke-width="2" fill="none"/>
-        <path d="M8 20V26C8 30 12 34 20 34C28 34 32 30 32 26V20" stroke="#171717" stroke-width="2" fill="none"/>
-        <path d="M12 20L14 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M20 20L22 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M28 20L26 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <circle cx="20" cy="28" r="1" fill="#171717"/>
-      </svg>
-      <span>Masjid</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="jadwal.html">Jadwal</a></li>
-      <li><a href="kegiatan.html">Kegiatan</a></li>
-      <li><a href="fasilitas.html">Fasilitas</a></li>
-      <li><a href="donasi.html">Donasi</a></li>
-      <li><a href="kontak.html">Kontak</a></li>
-    </ul>
-    <button class="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M24 4 L24 16 M16 16 L16 24 Q16 36 24 40 Q32 36 32 24 L32 16 M12 24 L36 24 M12 24 Q12 36 24 40 Q36 36 36 24 M20 40 L20 44 M28 40 L28 44"/>
+          <circle cx="24" cy="12" r="2"/>
+        </svg>
+        Masjid
+      </a>
+      <div class="navbar-links">
+        <a href="index.html" class="navbar-link">Beranda</a>
+        <a href="jadwal.html" class="navbar-link">Jadwal</a>
+        <a href="kegiatan.html" class="navbar-link">Kegiatan</a>
+        <a href="fasilitas.html" class="navbar-link">Fasilitas</a>
+        <a href="donasi.html" class="navbar-link">Donasi</a>
+        <a href="kontak.html" class="navbar-link active">Kontak</a>
+      </div>
+      <button id="hamburger" class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html" class="navbar-link">Beranda</a>
+    <a href="jadwal.html" class="navbar-link">Jadwal</a>
+    <a href="kegiatan.html" class="navbar-link">Kegiatan</a>
+    <a href="fasilitas.html" class="navbar-link">Fasilitas</a>
+    <a href="donasi.html" class="navbar-link">Donasi</a>
+    <a href="kontak.html" class="navbar-link">Kontak</a>
   </div>
-</nav>
-<div class="drawer-overlay"></div>
-<div class="drawer">
-  <a href="index.html">Beranda</a>
-  <a href="jadwal.html">Jadwal</a>
-  <a href="kegiatan.html">Kegiatan</a>
-  <a href="fasilitas.html">Fasilitas</a>
-  <a href="donasi.html">Donasi</a>
-  <a href="kontak.html">Kontak</a>
-</div>
 
-
-<main>
-  <section class="hero container">
-    <h1 class="reveal">Kontak & Lokasi</h1>
-    <p class="reveal">Temukan dan hubungi masjid untuk pertanyaan, kerja sama, atau kegiatan.</p>
+  <section style="background: var(--void); color: var(--canvas); padding: 80px 0;">
+    <div class="container text-center reveal">
+      <h1 class="display-hero" style="color: var(--canvas); margin-bottom: 16px;">Kontak & Lokasi</h1>
+      <p class="body-large" style="color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto;">
+        Hubungi kami atau kunjungi masjid.
+      </p>
+    </div>
   </section>
-  <hr class="divider">
-  <section class="section section-light">
+
+  <section class="section">
     <div class="container">
-      <h2 class="section-title reveal">Informasi Masjid</h2>
-      <p class="section-subtitle reveal">Kontak personel dan lokasi strategis masjid.</p>
-      <div class="card-grid reveal">
-        <div class="contact-info">
-          <div class="contact-info-item">
-            <div class="icon">📍</div>
-            <div><h4>Alamat</h4><p>Jl. Masjid Raya No.1, Jakarta 12345</p></div>
-          </div>
-          <div class="contact-info-item">
-            <div class="icon">📞</div>
-            <div><h4>Telepon</h4><p>(021) 123-4567</p></div>
-          </div>
-          <div class="contact-info-item">
-            <div class="icon">✉️</div>
-            <div><h4>Email</h4><p>info@masjid-web-app.id</p></div>
-          </div>
-          <div class="contact-info-item">
-            <div class="icon">🕐</div>
-            <div><h4>Jam Operasional</h4><p>Buka setiap hari, 04:00 – 21:00</p></div>
-          </div>
+      <div class="grid-2 reveal">
+        <div class="card card-featured">
+          <h3 class="sub-heading mb-md">Alamat</h3>
+          <p class="body mb-md">Jl. Contoh No. 123, Jakarta Selatan, DKI Jakarta</p>
+          <h3 class="sub-heading mb-md">Jam Operasional</h3>
+          <p class="body mb-md">Ibadah: 5 waktu sholat</p>
+          <p class="body mb-md">Kantor: Senin – Jumat, 08:00 – 16:00</p>
+          <h3 class="sub-heading mb-md">WhatsApp</h3>
+          <a href="https://wa.me/6281234567890" class="btn-primary">Chat via WhatsApp</a>
         </div>
-        <div class="card">
-          <form id="contact-form" onsubmit="return fakeSubmit(event)">
+        <div class="card card-featured">
+          <h3 class="sub-heading mb-md">Kirim Pesan</h3>
+          <form onsubmit="event.preventDefault(); alert('Pesan terkirim (demo)!');">
             <div class="form-group">
-              <label for="name">Nama Lengkap</label>
-              <input type="text" id="name" name="name" required placeholder="Nama kamu">
+              <label class="form-label">Nama</label>
+              <input type="text" class="form-input" placeholder="Nama lengkap">
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="email@contoh.id">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-input" placeholder="email@example.com">
             </div>
             <div class="form-group">
-              <label for="message">Pesan</label>
-              <textarea id="message" name="message" required placeholder="Tulis pesan..."></textarea>
+              <label class="form-label">Pesan</label>
+              <textarea class="form-textarea" placeholder="Tulis pesan..."></textarea>
             </div>
-            <button type="submit" class="btn-primary">Kirim Pesan</button>
+            <button type="submit" class="btn-primary w-full">Kirim</button>
           </form>
         </div>
       </div>
     </div>
   </section>
-</main>
 
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2026 Masjid Web App. Dibuat dengan 💻 untuk Ummat.</p>
-  </div>
-</footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-section"><h4>Masjid</h4><p class="caption">Rumah bermakna, teknologi sederhana.</p></div>
+        <div class="footer-section">
+          <h4>Navigasi</h4>
+          <a href="index.html">Beranda</a><a href="jadwal.html">Jadwal</a><a href="kegiatan.html">Kegiatan</a><a href="fasilitas.html">Fasilitas</a>
+        </div>
+        <div class="footer-section">
+          <h4>Lainnya</h4>
+          <a href="donasi.html">Donasi</a><a href="kontak.html">Kontak</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Masjid Web App</div>
+    </div>
+  </footer>
 
-<script src="assets/script.js"></script>
-<script>
-  function fakeSubmit(e) {
-    e.preventDefault();
-    alert('Terima kasih! Pesan kamu sudah dikirim.');
-    e.target.reset();
-    return false;
-  }
-</script>
+  <script src="js/main.js"></script>
 </body>
 </html>
