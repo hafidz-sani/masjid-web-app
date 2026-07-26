@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jadwal — Masjid Web App</title>
+<title>Jadwal — Masjid Nurul Iman</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Inter:wght@400;500;510;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,117 +13,161 @@
 <body>
 
 <nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 6L6 20H8C9.1 14.93 14.07 10 20 8C25.93 10 30.9 14.93 32 20H34L20 6Z" stroke="#171717" stroke-width="2" fill="none"/>
-        <path d="M8 20V26C8 30 12 34 20 34C28 34 32 30 32 26V20" stroke="#171717" stroke-width="2" fill="none"/>
-        <path d="M12 20L14 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M20 20L22 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M28 20L26 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <circle cx="20" cy="28" r="1" fill="#171717"/>
-      </svg>
-      <span>Masjid</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="jadwal.html">Jadwal</a></li>
-      <li><a href="kegiatan.html">Kegiatan</a></li>
-      <li><a href="fasilitas.html">Fasilitas</a></li>
-      <li><a href="donasi.html">Donasi</a></li>
-      <li><a href="kontak.html">Kontak</a></li>
-    </ul>
-    <button class="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+ <div class="nav-inner">
+ <a href="index.html" class="nav-logo">
+ <svg viewBox="0 0 40 40" fill="none"><path d="M20 6L6 20H8C9.1 14.93 14.07 10 20 8C25.93 10 30.9 14.93 32 20H34L20 6Z" stroke="#171717" stroke-width="2" fill="none"/><path d="M8 20V26C8 30 12 34 20 34C28 34 32 30 32 26V20" stroke="#171717" stroke-width="2" fill="none"/><path d="M12 20L14 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/><path d="M20 20L22 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/><path d="M28 20L26 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="28" r="1" fill="#171717"/></svg>
+ <span>Nurul Iman</span>
+ </a>
+ <ul class="nav-links">
+ <li><a href="index.html">Beranda</a></li>
+ <li><a href="jadwal.html">Jadwal</a></li>
+ <li><a href="kegiatan.html">Kegiatan</a></li>
+ <li><a href="fasilitas.html">Fasilitas</a></li>
+ <li><a href="donasi.html">Donasi</a></li>
+ <li><a href="kontak.html">Kontak</a></li>
+ </ul>
+ <button class="hamburger" aria-label="Buka menu"><span></span><span></span><span></span></button>
+ </div>
 </nav>
 <div class="drawer-overlay"></div>
 <div class="drawer">
-  <a href="index.html">Beranda</a>
-  <a href="jadwal.html">Jadwal</a>
-  <a href="kegiatan.html">Kegiatan</a>
-  <a href="fasilitas.html">Fasilitas</a>
-  <a href="donasi.html">Donasi</a>
-  <a href="kontak.html">Kontak</a>
+ <a href="index.html">Beranda</a>
+ <a href="jadwal.html">Jadwal</a>
+ <a href="kegiatan.html">Kegiatan</a>
+ <a href="fasilitas.html">Fasilitas</a>
+ <a href="donasi.html">Donasi</a>
+ <a href="kontak.html">Kontak</a>
 </div>
 
-
 <main>
-  <section class="hero container">
-    <h1 class="reveal">Jadwal Sholat & Kajian</h1>
-    <p class="reveal">Lihat waktu sholat dan jadwal kajian untuk hari ini.</p>
-  <section style="background: var(--surface);"><div class="container"><h2 class="section-heading mb-lg">Jadwal Mingguan</h2><div id="jadwal-weekly"></div></div></section>
-  <section class="section section-light">
-    <div class="container">
-      <h2 class="section-title reveal">Waktu Sholat</h2>
-      <p class="section-subtitle reveal" id="jadwal-date"></p>
-      <div class="jadwal-strip reveal" id="jadwal-strip"></div>
-      <table class="jadwal-table reveal" style="margin-top:24px;">
-        <thead><tr><th>Waktu</th><th>Sholat</th><th>Status</th></tr></thead>
-        <tbody id="jadwal-table-body"></tbody>
-      </table>
-    </div>
-  <section style="background: var(--surface);"><div class="container"><h2 class="section-heading mb-lg">Jadwal Mingguan</h2><div id="jadwal-weekly"></div></div></section>
-  <hr class="divider">
-  <section class="section section-dark">
-    <div class="container">
-      <h2 class="section-title reveal">Jadwal Kajian</h2>
-      <p class="section-subtitle reveal">Kegiatan kajian rutin dan pengajian mingguan.</p>
-      <div class="card-grid reveal" id="kajian-grid"></div>
-    </div>
-  <section style="background: var(--surface);"><div class="container"><h2 class="section-heading mb-lg">Jadwal Mingguan</h2><div id="jadwal-weekly"></div></div></section>
+ <section class="hero-section">
+ <div class="container">
+ <div class="hero text-center">
+ <p class="section-heading reveal">Jadwal Sholat</p>
+ <h1 class="reveal">Waktu Sholat Hari Ini</h1>
+ <p class="hero-sub reveal mx-auto max-w-600">Lihat jadwal sholat dan kajian untuk hari ini.</p>
+ <div class="prayer-widget reveal" id="jadwal-strip"></div>
+ </div>
+ </div>
+ </section>
+
+ <div class="divider"></div>
+
+ <section class="section">
+ <div class="container">
+ <p class="section-heading reveal">Jadwal Mingguan</p>
+ <h2 class="section-title reveal">7 Hari Ke Depan</h2>
+ <div class="table-wrap reveal" id="jadwal-weekly"></div>
+ </div>
+ </section>
+
+ <div class="divider"></div>
+
+ <section class="section">
+ <div class="container">
+ <p class="section-heading reveal">Kajian</p>
+ <h2 class="section-title reveal">Jadwal Kajian & Pengajian</h2>
+ <p class="section-subtitle reveal">Kegiatan kajian rutin dan pengajian mingguan di masjid.</p>
+ <div class="card-grid reveal" id="kajian-grid"></div>
+ </div>
+ </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <p>&copy; 2026 Masjid Web App. Dibuat dengan 💻 untuk Ummat.</p>
-  </div>
+ <div class="container"><p>© <span id="year"></span> Masjid Nurul Iman · Dibuat dengan ketenangan untuk Ummat.</p></div>
 </footer>
 
 <script src="js/main.js"></script>
 <script>
-(function() {
-  async function init() {
-    const data = await window.fetchMasjidData();
-    if (!data) return;
+(function () {
+ const root = 'data.json';
+ window.fetchMasjidData = async function () {
+  try { var r = await fetch(root); if (!r.ok) throw new Error('HTTP '+r.status); return await r.json(); }
+  catch (e) { console.warn('[API]', e.message); return null; }
+ };
 
-    const j = data.jadwal;
-    document.getElementById('jadwal-date').textContent = 'Lokasi: ' + j.location + ' • ' + new Date(j.date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+ var path = location.pathname.split('/').pop() || 'index.html';
+ var qsAll = function(s){return document.querySelectorAll(s)};
+ var qs = function(s,p){return(p||document).querySelector(s)};
 
-    const strip = document.getElementById('jadwal-strip');
-    Object.entries(j.times).forEach(([name, time]) => {
-      const div = document.createElement('div');
-      div.className = 'jadwal-strip-item' + (j.next === name ? ' current' : '');
-      div.innerHTML = '<div class="name">' + name.charAt(0).toUpperCase() + name.slice(1) + '</div><div class="time">' + time + '</div>';
-      strip.appendChild(div);
-    });
+ // mobile menu
+ var burger = qs('.hamburger');
+ var drawer = qs('.drawer');
+ var overlay = qs('.drawer-overlay');
+ if (burger) burger.addEventListener('click', function(){
+  this.classList.toggle('open'); drawer.classList.toggle('open'); overlay.classList.toggle('show');
+ });
+ if (overlay) overlay.addEventListener('click', function(){
+  burger.classList.remove('open'); drawer.classList.remove('open'); overlay.classList.remove('show');
+ });
+ qsAll('.drawer a').forEach(function(a){a.addEventListener('click',function(){
+  burger.classList.remove('open'); drawer.classList.remove('open'); overlay.classList.remove('show');
+ })});
 
-    const tbody = document.getElementById('jadwal-table-body');
-    Object.entries(j.times).forEach(([name, time]) => {
-      const isCurrent = j.next === name;
-      const row = document.createElement('tr');
-      row.className = isCurrent ? 'highlight' : '';
-      row.innerHTML = '<td style="font-family: JetBrains Mono, monospace; font-weight:500;">' + time + '</td>'
-        + '<td>' + name.charAt(0).toUpperCase() + name.slice(1) + '</td>'
-        + '<td>' + (isCurrent ? '<span class="pill-badge" style="background:rgba(39,166,68,0.12);color:var(--success);">Sekarang</span>' : '<span class="pill-badge">Akan Datang</span>') + '</td>';
-      tbody.appendChild(row);
-    });
+ // active nav
+ qsAll('.nav-links a').forEach(function(a){if(a.getAttribute('href')===path)a.classList.add('active')});
+ qsAll('.drawer a').forEach(function(a){if(a.getAttribute('href')===path)a.classList.add('active')});
 
-    const grid = document.getElementById('kajian-grid');
-    data.kegiatan.forEach(k => {
-      const d = new Date(k.time);
-      const card = document.createElement('div');
-      card.className = 'card kegiatan-card';
-      card.innerHTML = '<div class="kegiatan-header"><h3>' + k.title + '</h3><span class="pill-badge">' + fmt(k.status) + '</span></div>'
-        + '<p>' + (k.pemateri ? k.pemateri : '') + '</p>'
-        + '<p class="kegiatan-meta">' + d.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' }) + '</p>';
-      grid.appendChild(card);
-    });
+ // scroll reveal
+ var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});
+ },{threshold:0.12});
+ qsAll('.reveal').forEach(function(el,i){el.style.transitionDelay=(i*0.06)+'s';io.observe(el)});
 
-    function fmt(s) { return ({ 'akan-datang': 'Akan Datang', 'berlangsung': 'Berlangsung', 'selesai': 'Selesai' })[s] || s; }
+ // render
+ function render(data) {
+  var j = data.jadwal;
+  var loc = (data.meta && data.meta.location)||'';
+  var hijri = (j.hijri)?' · '+j.hijri:'';
+
+  // strip
+  var strip = document.getElementById('jadwal-strip');
+  if (strip) {
+   strip.innerHTML = (loc||hijri)
+    ? '<div class="mb-md" style="font-size:13px;color:var(--text-muted);">'+loc+hijri+'</div>'
+    : '';
+   Object.entries(j.times).forEach(function(k){
+    strip.innerHTML += '<div class="prayer-card'+(j.next===k[0]?' current':'')+'">'
+     +'<div class="p-label">'+(k[0].charAt(0).toUpperCase()+k[0].slice(1))+'</div>'
+     +'<div class="p-time">'+k[1]+'</div>'
+     +(j.next===k[0]?'<div class="p-next">Berikutnya</div>':'')
+     +'</div>';
+   });
   }
-  init();
+
+  // weekly table
+  var weekly = document.getElementById('jadwal-weekly');
+  if (weekly && data.jadwal.weekly) {
+   var rows = data.jadwal.weekly.map(function(w){
+    var t=w.times;
+    return '<tr><td>'+w.day+'</td><td class="table-time">'+t.subuh+'</td><td class="table-time">'+t.dzuhur+'</td><td class="table-time">'+t.ashar+'</td><td class="table-time">'+t.maghrib+'</td><td class="table-time">'+t.isya+'</td></tr>';
+   }).join('');
+   weekly.innerHTML = '<table class="table-jadwal"><thead><tr><th>Hari</th><th>Subuh</th><th>Dzuhur</th><th>Ashar</th><th>Maghrib</th><th>Isya</th></tr></thead><tbody>'+rows+'</tbody></table>';
+  }
+
+  // kajian cards
+  var grid = document.getElementById('kajian-grid');
+  if (grid && data.kegiatan) {
+   grid.innerHTML = data.kegiatan.filter(function(k){return k.status!=='selesai'}).map(function(k){
+    var d=new Date(k.time);
+    var cats={kajian:'Kajian',sosial:'Sosial',pendidikan:'TPQ',ibadah:'Ibadah'};
+    return '<div class="card event-card">'
+     +'<div class="event-meta"><span class="pill-badge">'+(cats[k.category]||'Kegiatan')+'</span>'
+     +'<span class="pill-badge">'+({'akan-datang':'Akan Datang','berlangsung':'Berlangsung','selesai':'Selesai'}[k.status]||k.status)+'</span></div>'
+     +'<div class="event-title">'+k.title+'</div>'
+     +(k.desc?'<div class="event-desc">'+k.desc+'</div>':'')
+     +(k.pemateri&&k.pemateri!=='-'?'<div class="event-meta"><span>👤 '+k.pemateri+'</span></div>':'')
+     +'<div class="event-meta"><span>'+d.toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'})+'</span></div>'
+     +(k.location?'<div class="event-meta"><span>📍 '+k.location+'</span></div>':'')
+     +'</div>';
+   }).join('');
+  }
+ }
+
+ document.addEventListener('DOMContentLoaded', function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+  window.fetchMasjidData().then(render);
+ });
 })();
 </script>
 </body>

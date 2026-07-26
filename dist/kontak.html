@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kontak — Masjid Web App</title>
+<title>Kontak — Masjid Nurul Iman</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Inter:wght@400;500;510;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,107 +13,114 @@
 <body>
 
 <nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 6L6 20H8C9.1 14.93 14.07 10 20 8C25.93 10 30.9 14.93 32 20H34L20 6Z" stroke="#171717" stroke-width="2" fill="none"/>
-        <path d="M8 20V26C8 30 12 34 20 34C28 34 32 30 32 26V20" stroke="#171717" stroke-width="2" fill="none"/>
-        <path d="M12 20L14 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M20 20L22 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M28 20L26 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <circle cx="20" cy="28" r="1" fill="#171717"/>
-      </svg>
-      <span>Masjid</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="jadwal.html">Jadwal</a></li>
-      <li><a href="kegiatan.html">Kegiatan</a></li>
-      <li><a href="fasilitas.html">Fasilitas</a></li>
-      <li><a href="donasi.html">Donasi</a></li>
-      <li><a href="kontak.html">Kontak</a></li>
-    </ul>
-    <button class="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+ <div class="nav-inner">
+ <a href="index.html" class="nav-logo">
+ <svg viewBox="0 0 40 40" fill="none"><path d="M20 6L6 20H8C9.1 14.93 14.07 10 20 8C25.93 10 30.9 14.93 32 20H34L20 6Z" stroke="#171717" stroke-width="2" fill="none"/><path d="M8 20V26C8 30 12 34 20 34C28 34 32 30 32 26V20" stroke="#171717" stroke-width="2" fill="none"/><path d="M12 20L14 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/><path d="M20 20L22 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/><path d="M28 20L26 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="28" r="1" fill="#171717"/></svg>
+ <span>Nurul Iman</span>
+ </a>
+ <ul class="nav-links">
+ <li><a href="index.html">Beranda</a></li>
+ <li><a href="jadwal.html">Jadwal</a></li>
+ <li><a href="kegiatan.html">Kegiatan</a></li>
+ <li><a href="fasilitas.html">Fasilitas</a></li>
+ <li><a href="donasi.html">Donasi</a></li>
+ <li><a href="kontak.html">Kontak</a></li>
+ </ul>
+ <button class="hamburger" aria-label="Buka menu"><span></span><span></span><span></span></button>
+ </div>
 </nav>
 <div class="drawer-overlay"></div>
 <div class="drawer">
-  <a href="index.html">Beranda</a>
-  <a href="jadwal.html">Jadwal</a>
-  <a href="kegiatan.html">Kegiatan</a>
-  <a href="fasilitas.html">Fasilitas</a>
-  <a href="donasi.html">Donasi</a>
-  <a href="kontak.html">Kontak</a>
+ <a href="index.html">Beranda</a>
+ <a href="jadwal.html">Jadwal</a>
+ <a href="kegiatan.html">Kegiatan</a>
+ <a href="fasilitas.html">Fasilitas</a>
+ <a href="donasi.html">Donasi</a>
+ <a href="kontak.html">Kontak</a>
 </div>
 
-
 <main>
-  <section class="hero container">
-    <h1 class="reveal">Kontak & Lokasi</h1>
-    <p class="reveal">Temukan dan hubungi masjid untuk pertanyaan, kerja sama, atau kegiatan.</p>
-  </section>
-  <hr class="divider">
-  <section class="section section-light">
-    <div class="container">
-      <h2 class="section-title reveal">Informasi Masjid</h2>
-      <p class="section-subtitle reveal">Kontak personel dan lokasi strategis masjid.</p>
-      <div class="card-grid reveal">
-        <div class="contact-info">
-          <div class="contact-info-item">
-            <div class="icon">📍</div>
-            <div><h4>Alamat</h4><p>Jl. Masjid Raya No.1, Jakarta 12345</p></div>
-          </div>
-          <div class="contact-info-item">
-            <div class="icon">📞</div>
-            <div><h4>Telepon</h4><p>(021) 123-4567</p></div>
-          </div>
-          <div class="contact-info-item">
-            <div class="icon">✉️</div>
-            <div><h4>Email</h4><p>info@masjid-web-app.id</p></div>
-          </div>
-          <div class="contact-info-item">
-            <div class="icon">🕐</div>
-            <div><h4>Jam Operasional</h4><p>Buka setiap hari, 04:00 – 21:00</p></div>
-          </div>
-        </div>
-        <div class="card">
-          <form id="contact-form" onsubmit="return fakeSubmit(event)">
-            <div class="form-group">
-              <label for="name">Nama Lengkap</label>
-              <input type="text" id="name" name="name" required placeholder="Nama kamu">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="email@contoh.id">
-            </div>
-            <div class="form-group">
-              <label for="message">Pesan</label>
-              <textarea id="message" name="message" required placeholder="Tulis pesan..."></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Kirim Pesan</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+ <section class="hero-section">
+ <div class="container">
+ <div class="hero text-center">
+ <p class="section-heading reveal">Hubungi Kami</p>
+ <h1 class="reveal">Kontak & Lokasi</h1>
+ <p class="hero-sub reveal mx-auto max-w-600">Temukan dan hubungi masjid untuk pertanyaan, kerja sama, atau kegiatan.</p>
+ </div>
+ </div>
+ </section>
+
+ <div class="divider"></div>
+
+ <section class="section">
+ <div class="container">
+ <div id="kontak-content" class="reveal"></div>
+ </div>
+ </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <p>&copy; 2026 Masjid Web App. Dibuat dengan 💻 untuk Ummat.</p>
-  </div>
+ <div class="container"><p>© <span id="year"></span> Masjid Nurul Iman · Dibuat dengan ketenangan untuk Ummat.</p></div>
 </footer>
 
 <script src="js/main.js"></script>
 <script>
-  function fakeSubmit(e) {
-    e.preventDefault();
-    alert('Terima kasih! Pesan kamu sudah dikirim.');
-    e.target.reset();
-    return false;
+(function(){
+ var root='data.json';
+ window.fetchMasjidData=function(){try{var r=fetch(root);return r.then(function(x){if(!x.ok)throw new Error('HTTP '+x.status);return x.json()})}catch(e){console.warn('[API]',e.message);return null}};
+ var qsAll=function(s){return document.querySelectorAll(s)};
+ var qs=function(s,p){return(p||document).querySelector(s)};
+ var burger=qs('.hamburger'),drawer=qs('.drawer'),overlay=qs('.drawer-overlay');
+ if(burger)burger.addEventListener('click',function(){this.classList.toggle('open');drawer.classList.toggle('open');overlay.classList.toggle('show')});
+ if(overlay)overlay.addEventListener('click',function(){burger.classList.remove('open');drawer.classList.remove('open');overlay.classList.remove('show')});
+ qsAll('.drawer a').forEach(function(a){a.addEventListener('click',function(){burger.classList.remove('open');drawer.classList.remove('open');overlay.classList.remove('show')})});
+ var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:0.12});
+ qsAll('.reveal').forEach(function(el,i){el.style.transitionDelay=(i*0.06)+'s';io.observe(el)});
+
+ function render(data){
+  var el=document.getElementById('kontak-content');if(!el||!data.kontak)return;
+  var k=data.kontak;
+  var items = [
+   {icon:'📍',label:'Alamat',text:k.alamat},
+   {icon:'📞',label:'Telepon',text:k.telepon},
+   {icon:'💬',label:'WhatsApp',text:'Chat via WhatsApp',link:'https://wa.me/'+k.whatsapp.replace('+','')},
+   {icon:'✉️',label:'Email',text:k.email,link:'mailto:'+k.email}
+  ];
+  var out='<div class="kontak-grid"><div>';
+  out+='<h3 style="font-size:20px;font-weight:600;margin-bottom:20px">Informasi Kontak</h3>';
+  items.forEach(function(it){
+   out+='<div class="contact-item mb-md">'
+    +'<div class="contact-icon">'+it.icon+'</div>'
+    +'<div><h4>'+it.label+'</h4>'
+    +(it.link?'<p><a href="'+it.link+'" target="_blank" style="color:var(--text-primary);text-decoration:underline;">'+it.text+'</a></p>'
+     :'<p>'+it.text+'</p>')
+    +'</div></div>';
+  });
+  out+='<div class="mt-xl"><h3 style="font-size:16px;font-weight:600;margin-bottom:14px">Jam Operasional</h3>';
+  if(k.jam_operasional){
+   var jam=k.jam_operasional;
+   [{l:'Ibadah',v:'5 waktu sholat'},{l:'Kantor',v:jam.kantor},{l:'TPQ',v:jam.tpq}].forEach(function(j){
+    if(j.v) out+='<div class="contact-item mb-sm"><div class="contact-icon">🕐</div><div><h4>'+j.l+'</h4><p>'+j.v+'</p></div></div>';
+   });
   }
+  out+='</div></div>';
+
+  // form
+  out+='<div><div class="card"><h3 style="font-size:18px;font-weight:600;margin-bottom:18px">Kirim Pesan</h3>'
+   +'<form onsubmit="event.preventDefault();alert(\'Pesan terkirim (demo)!\');">'
+   +'<div class="form-group"><label class="form-label">Nama</label><input type="text" class="form-input" placeholder="Nama lengkap"></div>'
+   +'<div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="email@example.com"></div>'
+   +'<div class="form-group"><label class="form-label">Pesan</label><textarea class="form-textarea" placeholder="Tulis pesan..."></textarea></div>'
+   +'<button type="submit" class="btn btn-primary" style="width:100%">Kirim</button></form></div></div>';
+
+  el.innerHTML=out;
+ }
+
+ document.addEventListener('DOMContentLoaded',function(){
+  document.getElementById('year').textContent=new Date().getFullYear();
+  fetchMasjidData().then(render);
+ });
+})();
 </script>
 </body>
 </html>

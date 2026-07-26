@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Donasi — Masjid Web App</title>
+<title>Donasi — Masjid Nurul Iman</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Inter:wght@400;500;510;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,95 +13,116 @@
 <body>
 
 <nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 6L6 20H8C9.1 14.93 14.07 10 20 8C25.93 10 30.9 14.93 32 20H34L20 6Z" stroke="#171717" stroke-width="2" fill="none"/>
-        <path d="M8 20V26C8 30 12 34 20 34C28 34 32 30 32 26V20" stroke="#171717" stroke-width="2" fill="none"/>
-        <path d="M12 20L14 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M20 20L22 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M28 20L26 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/>
-        <circle cx="20" cy="28" r="1" fill="#171717"/>
-      </svg>
-      <span>Masjid</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="jadwal.html">Jadwal</a></li>
-      <li><a href="kegiatan.html">Kegiatan</a></li>
-      <li><a href="fasilitas.html">Fasilitas</a></li>
-      <li><a href="donasi.html">Donasi</a></li>
-      <li><a href="kontak.html">Kontak</a></li>
-    </ul>
-    <button class="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+ <div class="nav-inner">
+ <a href="index.html" class="nav-logo">
+ <svg viewBox="0 0 40 40" fill="none"><path d="M20 6L6 20H8C9.1 14.93 14.07 10 20 8C25.93 10 30.9 14.93 32 20H34L20 6Z" stroke="#171717" stroke-width="2" fill="none"/><path d="M8 20V26C8 30 12 34 20 34C28 34 32 30 32 26V20" stroke="#171717" stroke-width="2" fill="none"/><path d="M12 20L14 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/><path d="M20 20L22 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/><path d="M28 20L26 12" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="28" r="1" fill="#171717"/></svg>
+ <span>Nurul Iman</span>
+ </a>
+ <ul class="nav-links">
+ <li><a href="index.html">Beranda</a></li>
+ <li><a href="jadwal.html">Jadwal</a></li>
+ <li><a href="kegiatan.html">Kegiatan</a></li>
+ <li><a href="fasilitas.html">Fasilitas</a></li>
+ <li><a href="donasi.html">Donasi</a></li>
+ <li><a href="kontak.html">Kontak</a></li>
+ </ul>
+ <button class="hamburger" aria-label="Buka menu"><span></span><span></span><span></span></button>
+ </div>
 </nav>
 <div class="drawer-overlay"></div>
 <div class="drawer">
-  <a href="index.html">Beranda</a>
-  <a href="jadwal.html">Jadwal</a>
-  <a href="kegiatan.html">Kegiatan</a>
-  <a href="fasilitas.html">Fasilitas</a>
-  <a href="donasi.html">Donasi</a>
-  <a href="kontak.html">Kontak</a>
+ <a href="index.html">Beranda</a>
+ <a href="jadwal.html">Jadwal</a>
+ <a href="kegiatan.html">Kegiatan</a>
+ <a href="fasilitas.html">Fasilitas</a>
+ <a href="donasi.html">Donasi</a>
+ <a href="kontak.html">Kontak</a>
 </div>
 
-
 <main>
-  <section class="hero container">
-    <h1 class="reveal">Donasi</h1>
-    <p class="reveal">Amal jariah untuk perjuangan masjid dan kegiatan kemanusiaan. Berapapun nilainya, pahalanya tetap besar.</p>
-  <section class="section"><div class="container"><div id="donasi-content"></div></div></section>
-  <hr class="divider">
-  <section class="section section-light">
-    <div class="container">
-      <h2 class="section-title reveal">Rekening Donasi</h2>
-      <p class="section-subtitle reveal">Setiap rupiah diterima sebagai amal jariyah yang dikelola secara transparan.</p>
-      <div class="card-grid reveal">
-        <div class="donasi-card">
-          <h3>Bank Syariah Indonesia</h3>
-          <div class="account">1234-5678-9012</div><div class="bank-name">a.n. Yayasan Masjid XYZ</div>
-        </div>
-        <div class="donasi-card">
-          <h3>Bank Mandiri</h3>
-          <div class="account">987-65432-10</div><div class="bank-name">a.n. Koperasi Masjid XYZ</div>
-        </div>
-        <div class="donasi-card">
-          <h3>GoPay / OVO / DANA</h3>
-          <div class="account">0812-3456-7890</div><div class="bank-name">a.n. Admin Masjid</div>
-        </div>
-      </div>
-    </div>
-  <section class="section"><div class="container"><div id="donasi-content"></div></div></section>
-  <hr class="divider">
-  <section class="section section-dark">
-    <div class="container">
-      <h2 class="section-title reveal">Infaq & Program</h2>
-      <p class="section-subtitle reveal">Program terbaru yang bisa kamu salurkan donasinya.</p>
-      <div class="card-grid reveal">
-        <div class="card">
-          <h3>🐄 Qurban 1447 H</h3>
-          <p style="margin-top:8px;">Program qurban untuk jamaah kurang mampu.</p>
-        </div>
-        <div class="card">
-          <h3>📚 Beasiswa TPQ</h3>
-          <p style="margin-top:8px;">Biaya pendidikan anak-anak di Taman Pendidikan Al-Qur'an.</p>
-        </div>
-        <div class="card">
-          <h3>🏗️ Renovasi</h3>
-          <p style="margin-top:8px;">Pembangunan dan renovasi fasilitas masjid.</p>
-        </div>
-      </div>
-    </div>
-  <section class="section"><div class="container"><div id="donasi-content"></div></div></section>
+ <section class="hero-section">
+ <div class="container">
+ <div class="hero text-center">
+ <p class="section-heading reveal">Amal & Infak</p>
+ <h1 class="reveal">Donasi</h1>
+ <p class="hero-sub reveal mx-auto max-w-600">Amal jariah untuk perjuangan masjid dan kegiatan kemanusiaan.</p>
+ </div>
+ </div>
+ </section>
+
+ <div class="divider"></div>
+
+ <section class="section">
+ <div class="container">
+ <div class="donasi-grid reveal" id="donasi-content"></div>
+ </div>
+ </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <p>&copy; 2026 Masjid Web App. Dibuat dengan 💻 untuk Ummat.</p>
-  </div>
+ <div class="container"><p>© <span id="year"></span> Masjid Nurul Iman · Dibuat dengan ketenangan untuk Ummat.</p></div>
 </footer>
+
+<script src="js/main.js"></script>
+<script>
+(function(){
+ var root='data.json';
+ window.fetchMasjidData=function(){try{var r=fetch(root);return r.then(function(x){if(!x.ok)throw new Error('HTTP '+x.status);return x.json()})}catch(e){console.warn('[API]',e.message);return null}};
+ var qsAll=function(s){return document.querySelectorAll(s)};
+ var qs=function(s,p){return(p||document).querySelector(s)};
+ var burger=qs('.hamburger'),drawer=qs('.drawer'),overlay=qs('.drawer-overlay');
+ if(burger)burger.addEventListener('click',function(){this.classList.toggle('open');drawer.classList.toggle('open');overlay.classList.toggle('show')});
+ if(overlay)overlay.addEventListener('click',function(){burger.classList.remove('open');drawer.classList.remove('open');overlay.classList.remove('show')});
+ qsAll('.drawer a').forEach(function(a){a.addEventListener('click',function(){burger.classList.remove('open');drawer.classList.remove('open');overlay.classList.remove('show')})});
+ var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:0.12});
+ qsAll('.reveal').forEach(function(el,i){el.style.transitionDelay=(i*0.06)+'s';io.observe(el)});
+
+ function render(data){
+  var el=document.getElementById('donasi-content');if(!el||!data.donasi)return;
+  var d=data.donasi;
+  var out='';
+
+  if (d.qris) {
+   out += '<div class="card donasi-card">'
+    + '<h3>QRIS</h3>'
+    + '<p style="color:var(--text-secondary)">'+d.qris.nama+'</p>'
+    + '<div style="width:200px;height:200px;margin:16px auto;display:flex;align-items:center;justify-content:center;background:var(--surface);border-radius:var(--radius-lg);border:1px solid rgba(0,0,0,0.05);">'
+    + '<span class="caption">(QRIS)</span></div>'
+    + '<p class="caption">Donasi minimal: '+d.qris.nominal_saran+'</p>'
+    + '</div>';
+  }
+
+  if (d.bank && d.bank.length) {
+   out += '<div class="donasi-grid mt-xl" style="grid-template-columns:repeat(' + Math.min(d.bank.length,3) + ',1fr);">';
+   d.bank.forEach(function(b){
+    out += '<div class="card donasi-card text-left">'
+     + '<h3 class="donasi-amount">Transfer</h3>'
+     + '<p class="caption">'+b.bank+' · '+b.cabang+'</p>'
+     + '<div class="account">'+b.norek+'</div>'
+     + '<p class="caption">a.n. '+b.an+'</p>'
+     + '</div>';
+   });
+   out += '</div>';
+  }
+
+  if (d.laporan) {
+   out += '<div class="card mt-xl">'
+    + '<h3 class="donasi-amount" style="font-size:16px;margin-bottom:22px">Laporan Keuangan · '+d.laporan.bulan+'</h3>'
+    + '<div class="donasi-grid" style="text-align:left">'
+    + '<div><p class="caption">Total Masuk</p><p class="donasi-amount">'+d.laporan.total_masuk+'</p></div>'
+    + '<div><p class="caption">Total Keluar</p><p class="donasi-amount">'+d.laporan.total_keluar+'</p></div>'
+    + '<div><p class="caption">Sisa</p><p class="donasi-amount">'+d.laporan.sisa+'</p></div>'
+    + '</div></div>';
+  }
+
+  el.innerHTML = out;
+ }
+
+ document.addEventListener('DOMContentLoaded', function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+  fetchMasjidData().then(render);
+ });
+})();
+</script>
 </body>
 </html>
