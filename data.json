@@ -1,0 +1,76 @@
+{
+  "jadwal": {
+    "location": "Jakarta",
+    "date": "2026-07-26",
+    "times": {
+      "subuh": "04:12",
+      "dzuhur": "11:54",
+      "ashar": "15:09",
+      "maghrib": "17:59",
+      "isya": "19:14"
+    },
+    "next": "dzuhur"
+  },
+  "kegiatan": [
+    {
+      "id": "1",
+      "title": "Kajian Rutin Mingguan",
+      "pemateri": "Ustadz Ahmad Hasyim",
+      "time": "2026-07-27T19:00:00",
+      "status": "akan-datang"
+    },
+    {
+      "id": "2",
+      "title": "Tahfidz Al-Quran Anak",
+      "pemateri": "Ustadzah Siti Nurhaliza",
+      "time": "2026-07-28T08:00:00",
+      "status": "akan-datang"
+    },
+    {
+      "id": "3",
+      "title": "Pengajian Akbar Bulanan",
+      "pemateri": "KH. Muhammad Ridwan",
+      "time": "2026-08-01T14:00:00",
+      "status": "akan-datang"
+    },
+    {
+      "id": "4",
+      "title": "Kajian Keluarga Muslim",
+      "pemateri": "Ustadz Ibrahim Faiz",
+      "time": "2026-07-20T10:00:00",
+      "status": "selesai"
+    }
+  ],
+  "fasilitas": [
+    {
+      "icon": "quran",
+      "title": "Perpustakaan Al-Qur'an",
+      "desc": "Koleksi lengkap Al-Qur'an dan terjemahan untuk kajian dan bacaan pribadi."
+    },
+    {
+      "icon": "prayer",
+      "title": "Musholla Utama",
+      "desc": "Ruang sholat utama berkapasitas 500 jamaah dengan AC dan akustik baik."
+    },
+    {
+      "icon": "classroom",
+      "title": "Ruang Kelas TPQ",
+      "desc": "Ruang belajar Taman Pendidikan Al-Qur'an untuk anak-anak."
+    },
+    {
+      "icon": "parking",
+      "title": "Area Parkir Luas",
+      "desc": "Lokasi parkir terpisah untuk motor dan mobil dengan keamanan 24 jam."
+    },
+    {
+      "icon": "kitchen",
+      "title": "Dapur Umum",
+      "desc": "Fasilitas dapur untuk kegiatan sosial dan pembagian makan berjamaah."
+    },
+    {
+      "icon": "wudhu",
+      "title": "Tempat Wudhu",
+      "desc": "Tempat wudhu terpisah untuk pria dan wanita dengan air hangat."
+    }
+  ]
+}
